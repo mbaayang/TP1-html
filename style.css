@@ -1,6 +1,6 @@
 body{
     margin: 0px;
-    background-color: yellow;
+    background-color: rgb(201, 15, 15);
 }
 
 img{
@@ -11,6 +11,7 @@ img{
 section p{
     text-align: center;
     font-weight: bold;
+    margin-top: 20px;
 }
 
 .container{
@@ -31,6 +32,7 @@ span{
     writing-mode: vertical-lr;
     margin: 10px 250px;
     font-weight: bold;
+    font-size: 20px;
 }
 
 button{
@@ -44,6 +46,49 @@ button:hover{
     background-color: black;
     color: white;
 }
+
+
+/*--------------------FORMULAIRE-----------------*/
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+form{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+#Prenom, #Nom, #Email, #Numero{
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#envoyer{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    
+}
+#envoyer:hover{
+    background-color: black;   
+    color: white;          
+}
+
+label{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/*------------------------RESPONSIVE DESIGN--------------------*/
 
 @media (max-width: 700px) {
     .boite{
@@ -61,5 +106,8 @@ button:hover{
     }
     button{
         margin-left: 45%;
+    }
+    form{
+        width: 300px;
     }
 }
